@@ -1,3 +1,0 @@
-char name[255];
-printf("Enter your name: ");
-printf("length = %d\n", strlen(name)); /* debug line */
