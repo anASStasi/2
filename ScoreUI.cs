@@ -20,7 +20,6 @@ public class ScoreUI : MonoBehaviour
 
     public void IncreaseScore()
     {
-        _score += 1;
-        _field.text = _score.ToString();
+        _field.text = (++_score).ToString();
     }
 }
