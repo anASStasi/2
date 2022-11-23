@@ -29,9 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         GameObject collisionObject = collision.gameObject;
 
-        if(collisionObject.transform.parent != null)
-        {
-            if (collisionObject.transform.parent.TryGetComponent(out Platform platform))
+            if (collisionObject.transform.parent?.TryGetComponent(out Platform platform))
                 platform.StopMovement();
         }
 
