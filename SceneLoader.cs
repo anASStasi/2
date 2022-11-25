@@ -7,7 +7,6 @@ public class SceneLoader : MonoBehaviour
 {
     public void ReloadScene()
     {
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentSceneName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);//дада я однострочник
     }
 }
